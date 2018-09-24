@@ -1,5 +1,8 @@
 #ifndef COMPTE_H
 #define COMPTE_H
+#include <string>
+
+using namespace std;
 
 
 class Compte
@@ -18,12 +21,12 @@ class Compte
         void setSoldeCompte(float val) { soldeCompte = val; }
         float getDecouvertMax() const { return decouvertMax; }
         void setDecouvertMax(float val) { decouvertMax = val; }
-        static int getDernierNumeroAttribue() const { return numeroAttribue--; }
-        void setNumeroAttribue(static int val) { numeroAttribue = val; }
+        static int getDernierNumeroAttribue() { return numeroAttribue--; }
+        void setNumeroAttribue(int val) { numeroAttribue = val; }
 
         void debiter(float);
         void crediter(float);
-        void afficher() const;
+        void afficher();
 
     private:
         int numeroCompte;

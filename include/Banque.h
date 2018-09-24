@@ -1,5 +1,9 @@
 #ifndef BANQUE_H
 #define BANQUE_H
+#include "Compte.h"
+#include <string>
+
+using namespace std;
 
 
 class Banque
